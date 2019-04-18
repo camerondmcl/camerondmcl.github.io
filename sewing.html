@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138509889-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138509889-1');
+    </script>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Sewing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div id=skip-button>
+      <a href="#content" class="skip">Skip to content</a>
+    </div>
+    <header>
+        <h1>Cameron McLaughlin - Cosplayer and Crafter</h1>
+          <nav id="navBar">
+            <div class="menu">
+                <a href="javascript:void(0);" class="hamburger" onclick="showMenu()">
+                <i class="fas fa-bars" id="hamburgerIcon" aria-label="Show menu"></i> </a>
+                <div id="menuItems">
+                <ul>
+                  <li><a href="index.html"><i class="fas fa-home" aria-label="Home icon"></i> Home</a></li>
+                  <li><a href="gallery.html"><i class="fas fa-user-secret" aria-label="Disguise icon"></i> Cosplay Gallery</a></li>
+                  <li class="current"><a href="sewing.html"><i class="fas fa-tshirt" aria-label="Shirt icon"></i> Sewing</a></li>
+                  <li><a href="props.html"><i class="fas fa-drafting-compass" aria-label="Drafting compass icon"></i> Props</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+    <main id="content">
+      <div class="image-and-text">
+        <img src="images/first_sewing_project.JPG" alt="My first sewing project, a modified priest's robe">
+        <p>
+          This was my very first sewing project, a mage/priest's robe from the Japanese animated show 'Fate/Zero'. I completed it over Christmas break and did most of the initial sewing by hand (although I later went back over much of it with a borrowed machine). The most difficult part of the project ended up being attaching the black ribbon accents, which I attempted first with hot glue (which left unsightly residue on the fabric) and then with fabric glue (which had a better result but was difficult to work with).
+        </p>
+      </div>
+      <div class="image-and-text">
+        <img src="images/booker_vest.JPG" alt="My vest for Booker Dewitt, the first time I sewed something completely on my own">
+        <p>
+          This vest, for Booker Dewitt, protagonist of the game 'Bioshock Infinite', was my first major project that was done entirely with a sewing machine (now my own, a vintage 60s-era Singer handed down from my grandma), and the first project I did without any outside help. It was also the last time I ever used a commercial sewing pattern.
+        </p>
+      </div>
+      <div class="image-and-text">
+        <img src="images/connor_1.JPG" alt="My original coat for Connor Kenway, the first time I did not use a commercial sewing pattern">
+        <p>
+          For my next project, I wanted to cosplay Connor Kenway from the game 'Assassin's Creed III'. His outfit involved what was essentially a very heavily modified Revolutionary War-era military coat. I knew I would not find a commercial pattern that would be at all close, so I decided to copy a pattern template I found online. It went surprisingly well, and while the coat itself ended up being slightly too small for me, I found the custom pattern much easier to work with and the whole thing was a very valuable learning experience. From then on, I always made my own patterns, either by copying the shapes of well-fitting garments I owned or by copying and modifying other existing patterns of mine.
+        </p>
+      </div>
+      <div class="image-and-text">
+        <img src="images/leatherjacket.JPG" alt="The leather jacket I made the spring after graduating, probably my single most difficult garment yet">
+        <p>
+          The most ambitious project I have taken on was in the spring after I graduated undergrad, when I decided I want to make a 1930s-style leather aviator jacket to cosplay Captain America (a costume that I still have not quite completed yet). I definitely wanted it to be real leather, since I find faux leather extremely uncomfortable to wear, but I knew I would never be able to afford enough whole leather hides to make an entire jacket. I eventually found a real leather armchair and ottoman for sale on Craigslist for $20. With the help of a friend and his fan, I picked them up, and spent my spare time over the next few weeks meticulously deconstructing the furniture to remove the pieces of leather. I ended up having so much left over I can probably make another coat out of the rest, and the jacket turned out quite well for the most part (although not particularly comfortable, due to the thickness of the leather and poor choices for lining fabric...). The leather was very sturdy, and if it had been even half a milimeter thicker my sewing machine would probably not have been able to handle it.
+        </p>
+      </div>
+      <div class="image-and-text">
+        <img src="images/coat.JPG" alt="My 'Sherlock'-inspired overcoat, currently one of my favorite sewing projects">
+        <p>
+          Since then, I have continued working on my skills. My favorite piece I have made is probably a double-breasted herringbone wool overcoat based loosely on the Belstaff coat worn by Benedict Cumberbatch in the BBC's 'Sherlock'.
+        </p>
+      </div>
+    </main>
+    <footer>
+      <!-- <div class="grid-footer"> -->
+        <address>
+          Have any questions? Want to collaborate on a project?<br>Send me a message at <a href="mailto:cdmcl@umich.edu" id="email">cdmcl@umich.edu</a>.
+        </address>
+        (Disclaimer: all weapons pictured on this site are nonfunctional costume props.)<br>
+        Favicon from www.freefavicon.com. Icons from fontawesome.com.
+      <!-- </div> -->
+    </footer>
+    <script>
+      window.onscroll = function() {navScroll()};
+      var navBar = document.getElementById('navBar');
+      var navBarY = navBar.offsetTop;
+    </script>
+  </body>
+</html>

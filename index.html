@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138509889-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-138509889-1');
+    </script>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>My Journey as a Cosplayer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div id=skip-button>
+      <a href="#content" class="skip">Skip to content</a>
+    </div>
+    <header>
+        <h1>Cameron McLaughlin - Cosplayer and Crafter</h1>
+          <nav id="navBar">
+            <div class="menu">
+                <a href="javascript:void(0);" class="hamburger" onclick="showMenu()">
+                <i class="fas fa-bars" id="hamburgerIcon" aria-label="Show menu"></i> </a>
+                <div id="menuItems">
+                <ul>
+                  <li class="current"><a href="index.html"><i class="fas fa-home" aria-label="Home icon"></i> Home</a></li>
+                  <li><a href="gallery.html"><i class="fas fa-user-secret" aria-label="Disguise icon"></i> Cosplay Gallery</a></li>
+                  <li><a href="sewing.html"><i class="fas fa-tshirt" aria-label="Shirt icon"></i> Sewing</a></li>
+                  <li><a href="props.html"><i class="fas fa-drafting-compass" aria-label="Drafting compass icon"></i> Props</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+      </header>
+    <main id="content">
+      <div class="homepage-image">
+        <img src="images/solo_esb.JPG" alt="Myself cosplaying Han Solo from The Empire Strikes Back">
+        <p>
+          Hi, I'm Cameron! I'm a student at the University of Michigan, and since my freshman   year here, I've been an avid cosplayer. (For those unfamiliar with the hobby, that means I recreate costumes from movies, shows, and games, and wear them to conventions or 'cons'.) On this site I'll be detailing the progress I've made with my crafting skills over the years.
+        </p>
+      </div>
+    </main>
+    <div class="callout">
+      <div class="callout-header">Hello There!</div>
+      <span class="close" onclick="this.parentElement.style.display='none';"><i class="fas fa-times" aria-label="Close"></i></span>
+      <div class="callout-container">
+        <p>Are you a cosplayer or photographer interested in working with me?<br>Send me a message at <a href="mailto:cdmcl@umich.edu">cdmcl@umich.edu</a>!</p>
+      </div>
+    </div>
+    <footer>
+      <!-- <div class="grid-footer"> -->
+        <address>
+          Have any questions? Want to collaborate on a project?<br>Send me a message at <a href="mailto:cdmcl@umich.edu" id="email">cdmcl@umich.edu</a>.
+        </address>
+        (Disclaimer: all weapons pictured on this site are nonfunctional costume props.)<br>
+        Favicon from www.freefavicon.com. Icons from fontawesome.com.
+      <!-- </div> -->
+    </footer>
+    <script>
+      window.onscroll = function() {navScroll()};
+      var navBar = document.getElementById('navBar');
+      var navBarY = navBar.offsetTop;
+    </script>
+  </body>
+</html>
