@@ -74,18 +74,40 @@
       </div>
     </main>
     <footer>
-      <!-- <div class="grid-footer"> -->
-        <address>
-          Have any questions? Want to collaborate on a project?<br>Send me a message at <a href="mailto:cdmcl@umich.edu" id="email">cdmcl@umich.edu</a>.
-        </address>
-        (Disclaimer: all weapons pictured on this site are nonfunctional costume props.)<br>
-        Favicon from www.freefavicon.com. Icons from fontawesome.com.
-      <!-- </div> -->
+      <button onclick="toggleAccordion()" class="accordion" id="accordion">My cat Mariel wants to say hi! Click to open.</button>
+        <div class="accordion-content" id="accordionContent">
+          <button onclick="showModal()" id="modalButton">Open Video</button>
+          <div id="video-modal">
+            <div id="modal-header">
+              Mariel says hi!
+              <span class="close" onclick="this.parentElement.parentElement.style.display='none';console.log('closing modal');"><i id="closeModal" class="fas fa-times" aria-label="Close video window"></i></span>
+            </div>
+            <div id="entire-video">
+              <button onclick="playPause()">Play/Pause</button>
+              <button onclick="muteAudio()">Mute Audio</button><br>
+              <video id="cat-video" aria-label="A video of a tortiseshell cat jumping up onto a windowsill and walking toward the camera">
+                <source src="videos/mariel.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+          </div>
+        </div>
+      <address>
+        Have any questions? Want to collaborate on a project?<br>Send me a message at <a href="mailto:cdmcl@umich.edu" id="email">cdmcl@umich.edu</a>.
+      </address>
+      (Disclaimer: all weapons pictured on this site are nonfunctional costume props.)<br>
+      Favicon from www.freefavicon.com. Icons from fontawesome.com.
     </footer>
     <script>
       window.onscroll = function() {navScroll()};
       var navBar = document.getElementById('navBar');
       var navBarY = navBar.offsetTop;
+      var accordion = document.getElementById('accordion');
+      var accordionContent = document.getElementById('accordionContent')
+      var modal = document.getElementById('video-modal');
+      var modalButton = document.getElementById('modalButton');
+      var closeModal = document.getElementById('closeModal');
+      var catVideo = document.getElementById('cat-video');
     </script>
   </body>
 </html>

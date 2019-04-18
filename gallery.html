@@ -43,25 +43,19 @@
       </header>
     <main id="content">
       <div class="image-and-text">
-        <!-- <div class="l-image"> -->
           <img src="images/mal.JPG" alt="My first cosplay, Malcolm Reynolds from 'Firefly'">
-        <!-- </div> -->
         <p>
           My first 'true' cosplay (as opposed to a Halloween costume) was Captain Mal Reynolds from the sci-fi TV series 'Firefly'. I found a brown duster coat online (that ended up being quite large on me) and a toy revolver, and with the help of a family friend, sewed stripes onto a pair of pants. It was quite simple and not particularly accurate, but I had a lot of fun wearing it and was hooked on the hobby.
         </p>
       </div>
       <div class="image-and-text">
-      <!-- <div class="vertical-single-image"> -->
         <img src="images/vash.JPG" alt="My cosplay of Vash the Stampede from 'Trigun'">
-      <!-- </div> -->
         <p>
           The next year, I put together what I felt at the time to be my first 'good' cosplay, Vash the Stampede from the Japanese series 'Trigun'. It was again mostly made from things I'd bought, but I felt so cool walking around the con wearing the long red leather duster (having a rather questionable fashion sense at the time, I ended up wearing that duster quite frequently during my sophomore and junior years).
         </p>
       </div>
       <div class="image-and-text">
-        <!-- <div class="l-image"> -->
           <img src="images/booker.JPG" alt="My favorite of my earlier cosplays, Booker Dewitt from 'Bioshock Infinite'">
-        <!-- </div> -->
         <p>
           The first cosplay that I made anything substantial for was Booker Dewitt from the game 'Bioshock Infinite' that fall, with a vest, holster rig, and tie that I'd made myself and a pistol I'd painted. I also did my first attempt at weathering all the main pieces of clothing with paint, and I tried using some dirt makeup on my face and arms. I consider Booker to be my best early cosplay.
         </p>
@@ -128,18 +122,40 @@
       </div>
     </main>
     <footer>
-      <!-- <div class="grid-footer"> -->
-        <address>
-          Have any questions? Want to collaborate on a project?<br>Send me a message at <a href="mailto:cdmcl@umich.edu" id="email">cdmcl@umich.edu</a>.
-        </address>
-        (Disclaimer: all weapons pictured on this site are nonfunctional costume props.)<br>
-        Favicon from www.freefavicon.com. Icons from fontawesome.com.
-      <!-- </div> -->
+      <button onclick="toggleAccordion()" class="accordion" id="accordion">My cat Mariel wants to say hi! Click to open.</button>
+        <div class="accordion-content" id="accordionContent">
+          <button onclick="showModal()" id="modalButton">Open Video</button>
+          <div id="video-modal">
+            <div id="modal-header">
+              Mariel says hi!
+              <span class="close" onclick="this.parentElement.parentElement.style.display='none';console.log('closing modal');"><i id="closeModal" class="fas fa-times" aria-label="Close video window"></i></span>
+            </div>
+            <div id="entire-video">
+              <button onclick="playPause()">Play/Pause</button>
+              <button onclick="muteAudio()">Mute Audio</button><br>
+              <video id="cat-video" aria-label="A video of a tortiseshell cat jumping up onto a windowsill and walking toward the camera">
+                <source src="videos/mariel.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+            </div>
+          </div>
+        </div>
+      <address>
+        Have any questions? Want to collaborate on a project?<br>Send me a message at <a href="mailto:cdmcl@umich.edu" id="email">cdmcl@umich.edu</a>.
+      </address>
+      (Disclaimer: all weapons pictured on this site are nonfunctional costume props.)<br>
+      Favicon from www.freefavicon.com. Icons from fontawesome.com.
     </footer>
     <script>
       window.onscroll = function() {navScroll()};
       var navBar = document.getElementById('navBar');
       var navBarY = navBar.offsetTop;
+      var accordion = document.getElementById('accordion');
+      var accordionContent = document.getElementById('accordionContent')
+      var modal = document.getElementById('video-modal');
+      var modalButton = document.getElementById('modalButton');
+      var closeModal = document.getElementById('closeModal');
+      var catVideo = document.getElementById('cat-video');
     </script>
   </body>
 </html>

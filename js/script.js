@@ -1,8 +1,3 @@
-// window.onload = function() {
-//   var navBar = document.getElementById('navBar');
-//   var navBarY = navBar.offsetTop;
-// }
-// window.onscroll = function() {navScroll()};
 
 function showMenu() {
   var menu = document.getElementById("menuItems");
@@ -27,9 +22,47 @@ function navScroll() {
   console.log(navBarY);
   if (window.pageYOffset >= navBarY) {
     navBar.classList.add("sticky");
-    console.log('making nav sticky')
+    console.log('making nav sticky');
   } else {
     navBar.classList.remove("sticky");
-    console.log('making nav not sticky')
+    console.log('making nav not sticky');
+  }
+}
+
+function playPause() {
+  console.log('play/pause pressed');
+  if (catVideo.paused){
+    catVideo.play();
+    console.log('playing');
+  } else {
+    catVideo.pause();
+    console.log('paused');
+  }
+}
+
+function muteAudio() {
+  console.log('mute pressed');
+  if (catVideo.muted){
+    catVideo.muted = false;
+    console.log('unmuting');
+  } else{
+    catVideo.muted = true;
+    console.log('muting');
+  }
+}
+
+function showModal(){
+  modal.style.display = "block";
+  console.log('opening modal');
+}
+
+function toggleAccordion(){
+  console.log('clicked accordion');
+  accordionContent.classList.toggle("active");
+  var panel = accordion.nextElementSibling;
+  if (panel.style.maxHeight){
+    panel.style.maxHeight = null;
+  } else {
+    panel.style.maxHeight = panel.scrollHeight + "px";
   }
 }
